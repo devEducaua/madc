@@ -1,8 +1,29 @@
 # madc
+MAnage Docker Compose easily.
 
-ex:
-$ madc redlib up
-$ madc redlib down
-$ madc list
+# why
+I built this project because I run much selfhosted applications in a low hardware, and need to toggle then all time.
 
-maybe built a tui later, with bubbletea.
+# use
+put the your containers in madc.conf:
+```conf
+name:/path/to/file.yml
+```
+
+list the containers
+```console
+$ ./madc
+```
+
+up container:
+```console
+$ madc container_name u
+```
+
+down container:
+```console
+$ madc container_name d
+```
+
+# todo
+- change it to a tui
