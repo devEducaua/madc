@@ -6,8 +6,9 @@ I built this project because I run much selfhosted applications in a low hardwar
 
 # use
 put the your containers in madc.conf:
+**WARNING**: is automatic added your home directory before the path
 ```conf
-name:/path/to/file.yml
+container_name:/path/to/file.yml
 ```
 
 list the containers
